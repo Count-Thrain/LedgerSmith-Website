@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | LedgerSmith Bookkeeping</title>
+  <meta name="description" content="Book a free 20-minute bookkeeping consultation with LedgerSmith. We respond within one business day.">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="/" aria-label="LedgerSmith home"><img src="/assets/ledgersmith-logo.png" alt="LedgerSmith" width="900" height="162"></a>
+      <nav class="nav" aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/services">Services</a>
+        <a href="/contact" aria-current="page">Contact</a>
+        <a class="btn" href="#consultation">Free Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Let's Talk About Your Books</h1>
+        <p>Whether you're drowning in DIY bookkeeping, behind on reconciliations, or just tired of not knowing where your numbers stand — let's fix it.</p>
+      </div>
+    </section>
+
+    <section class="section" id="consultation">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <div style="display:grid; gap:16px">
+            <h2>Start With a Free 20-Minute Consultation</h2>
+            <p style="font-size:1.1rem; color:var(--ink-soft)">No pressure, no sales pitch — just a real conversation about where your books stand today and what it would look like to have them handled for good.</p>
+            <p class="micro"><em>We'll respond within one business day to schedule a time that works for you.</em></p>
+          </div>
+
+          <div style="display:grid; gap:14px">
+            <h3>Other Ways to Reach Us</h3>
+            <dl class="info-list">
+              <div><dt>Email</dt><dd><a href="mailto:hello@ledgersmithbookkeeping.com">hello@ledgersmithbookkeeping.com</a></dd></div>
+              <div><dt>Phone</dt><dd>[Your phone number]</dd></div>
+              <div><dt>Office hours</dt><dd>Monday–Friday, 9 AM – 5 PM</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <form class="contact-form js-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="form" value="Contact – consultation request">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="business">Business name</label>
+            <input id="business" name="business_name" type="text" autocomplete="organization" required>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="revenue">Annual revenue</label>
+            <select id="revenue" name="annual_revenue" required>
+              <option value="" selected disabled>Select one</option>
+              <option>Under $1M</option>
+              <option>$1M–$3M</option>
+              <option>Over $3M</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="headache">What's your biggest bookkeeping headache right now?</label>
+            <textarea id="headache" name="biggest_headache"></textarea>
+          </div>
+          <button class="btn" type="submit">Get My Free Consultation</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--sand">
+      <div class="container" style="max-width:820px; text-align:center">
+        <p class="closing-line">You didn't build your business to spend nights doing your own books. Let's talk about getting that time back — and making sure everything's done right.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a class="logo" href="/" aria-label="LedgerSmith home"><img src="/assets/ledgersmith-logo.png" alt="LedgerSmith" width="900" height="162"></a>
+      <nav aria-label="Footer">
+        <a href="/">Home</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Contact</a>
+      </nav>
+      <p class="copyright">© <span class="js-year">2026</span> LedgerSmith Bookkeeping. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/forms.js" defer></script>
+</body>
+</html>
